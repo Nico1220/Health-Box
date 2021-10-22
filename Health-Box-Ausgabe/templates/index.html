@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>BMI Rechner</title>
+  <title>Health-Box</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <script>
       function send_json() {
@@ -21,17 +21,17 @@
         //  Methode  requestListener abgearbeitet werden
         xhr.addEventListener("load", requestListener);
         // Auslesen des Werts in dem Eingabefeld mit der id height_cm
-        let user = document.getElementById("user").value;
+        let temp = document.getElementById("temp").value;
         // Auslesen des Werts in dem Eingabefeld mit der id weight_kg
-        let password = document.getElementById("password").value;
+        let puls = document.getElementById("puls").value;
         // Erzeugen eines "leeren" Objekts
         let obj = {};
         // Hinzufügen des Attributs height_cm zum Objekt
-        obj.user = user;
+        obj.temp = temp;
         // Hinzufügen des Attributs weight_kg zum Objekt
-        obj.password = password;
+        obj.puls = puls;
         // Vorbereiten zum Abschicken
-        xhr.open('POST', 'api/login');
+        xhr.open('POST', 'api/health-box');
         // MIME-Type setzen
         xhr.setRequestHeader('Content-Type', 'application/json');
         // Daten absenden
@@ -43,29 +43,29 @@
   <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h3 class="jumbotron text-center">Login Page</h3>
+            <h3 class="jumbotron text-center">Health Box</h3>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <label for="user">Benutzer:</label>
-            <input type="" id="user"
-              placeholder="Benutzername" class="form-control">
+            <label for="temp">Temperatur:</label>
+            <input type="" id="temp"
+              placeholder="Temperatur" class="form-control">
         </div>
         <div class="col-md-6">
-            <label for="password">Passwort:</label>
-            <input type="password"
-            id="password"
-            placeholder="Passwort" class="form-control">
+            <label for="puls">Puls:</label>
+            <input type="Puls:"
+            id="puls"
+            placeholder="Puls" class="form-control">
         </div>
     </div>
     <div class="row" style="margin: 15px;">
-        <button type="button" onclick="send_json()" class="btn btn-primary btn-lg btn-block">Login</button>
+
     </div>
     <div class="row">
         <div class="well text-center">
-            <h3 class="text-muted">Login Daten</h3>
-            <h2><span class="label" id="result">False</span></h2>
+            <h3 class="text-muted">Gesundheitlicher Zustand</h3>
+            <h2><span class="label" id="result"></span></h2>
         </div>
     </div>
   </div>

@@ -8,22 +8,16 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/api/login', methods=['POST'])
+@app.route('/api/health-box', methods=['POST'])
 def calculate_bmi():
     # request enthält die vom Client übergebenen Daten
     # Parmeter force ...Mimetype ignorieren und immer als JSON parsen
     data = request.get_json(force=True)
     try:
-        user = data['user']
-        password = data['password']
+        temp = data['temp']
+        puls = data['puls']
     except:
         abort(500, "paramerzers user and password needed")
-
-    if ((user == "user42") and (password == "geheim")):
-         return jsonify({'result': "true"})
-    else:
-         return jsonify({'result': "false"})
-
 
 if __name__ == "__main__":
     app.run()
