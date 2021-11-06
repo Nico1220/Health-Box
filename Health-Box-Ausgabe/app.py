@@ -17,7 +17,7 @@ def calculate_bmi():
         temp = data['temp']
         puls = data['puls']
     except:
-        abort(500, "paramerzers user and password needed")
+        abort(500, "paramerzers needed")
 
 if __name__ == "__main__":
     app.run()
