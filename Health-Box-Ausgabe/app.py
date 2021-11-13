@@ -15,7 +15,7 @@ def calculate_bmi():
     data = request.get_json(force=True)
     try:
         temp = data['temp']
-        puls = data['puls']
+        puls = data['pulssauerstoffgehalt']
     except:
         abort(500, "paramerzers needed")
 
