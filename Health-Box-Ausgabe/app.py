@@ -14,7 +14,7 @@ def calculate_bmi():
     # Parmeter force ...Mimetype ignorieren und immer als JSON parsen
     data = request.get_json(force=True)
     try:
-        temp = data['temp']
+        temp = data['temperatur']
         puls = data['puls']
     except:
         abort(500, "paramerzers needed")
