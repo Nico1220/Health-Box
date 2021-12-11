@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f691bd2-dcd2-4263-b2aa-8e4c9b4107ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MAX30102.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartrate_monitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/heartrate_monitor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/max30102.py" beforeDir="false" />
-    </list>
+    <list default="true" id="0f691bd2-dcd2-4263-b2aa-8e4c9b4107ed" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,7 +235,7 @@
       <workItem from="1636197148868" duration="47000" />
       <workItem from="1636285208768" duration="93000" />
       <workItem from="1639218709389" duration="178000" />
-      <workItem from="1639218903247" duration="2084000" />
+      <workItem from="1639218903247" duration="2196000" />
     </task>
     <servers />
   </component>

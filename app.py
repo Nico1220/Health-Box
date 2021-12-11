@@ -8,10 +8,11 @@ from heartrate_monitor import HeartRateMonitor
 import time
 import argparse
 
-runpy.run_path(heartrate_monitor.py);
-runpy.run_path(MAX30102.py);
-runpy.run_path(MLX90614.py);
-runpy.run_path(hrcalc.py)
+runpy.run_path(MAX30102);
+runpy.run_path(heartrate_monitor);
+runpy.run_path(hrcalc)
+runpy.run_path(MLX90614);
+
 
 while(True):
     if __name__ == "__main__":
