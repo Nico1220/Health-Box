@@ -1,4 +1,4 @@
-from max30102 import *
+from MAX30102 import MAX30102
 import hrcalc
 import threading
 import time

@@ -1,7 +1,17 @@
+import runpy
+
+import MAX30102
+import heartrate_monitor
+import hrcalc
 from MLX90614 import *
 from heartrate_monitor import HeartRateMonitor
 import time
 import argparse
+
+runpy.run_path(heartrate_monitor.py);
+runpy.run_path(MAX30102.py);
+runpy.run_path(MLX90614.py);
+runpy.run_path(hrcalc.py)
 
 while(True):
     if __name__ == "__main__":
